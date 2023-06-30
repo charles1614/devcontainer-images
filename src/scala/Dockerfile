@@ -2,7 +2,7 @@ FROM ghcr.io/charles1614/devcontainer-images/debian:latest
 
 # RUN curl -s "https://get.sdkman.io" | bash 
 ARG JDK_VERSION=17.0.7-ms
-ARG MAVEN_VERSION=latest
+ARG MAVEN_VERSION=3.9.2
 ARG SCALA_VERSION=2.12.10
 
 # sdkman 

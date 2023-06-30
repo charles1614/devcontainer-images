@@ -1,17 +1,18 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
-    "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-    },
-    "postCreateCommand": "npm install -g @devcontainers/cli",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-				"mads-hartmann.bash-ide-vscode",
-				"dbaeumer.vscode-eslint",
-				"EditorConfig.EditorConfig",
-				"GitHub.vscode-github-actions"
-			]
-        }
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+  },
+  "postCreateCommand": "npm install -g @devcontainers/cli",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "mads-hartmann.bash-ide-vscode",
+        "dbaeumer.vscode-eslint",
+        "EditorConfig.EditorConfig",
+        "GitHub.vscode-github-actions",
+        "esbenp.prettier-vscode"
+      ]
     }
+  }
 }

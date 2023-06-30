@@ -1,4 +1,4 @@
-name: 'build' 
+name: "build"
 on: # rebuild any PRs and main branch changes
   workflow_dispatch:
     inputs:
@@ -15,13 +15,15 @@ on: # rebuild any PRs and main branch changes
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        subFolder: [debain, scala]
     steps:
-
       - name: Checkout (GitHub)
         uses: actions/checkout@v3
 
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@v2 
+        uses: docker/login-action@v2
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
@@ -30,9 +32,9 @@ jobs:
       - name: Build and run Dev Container task
         uses: devcontainers/ci@v0.3
         with:
-          subFolder: src/debian
+          subFolder: src/${{ matrix.subFolder }}
           # Change this to point to your image name
-          imageName: ghcr.io/charles1614/devcontainers-images/debain
+          imageName: ghcr.io/charles1614/devcontainers-images/${{ matrix.subFolder }}
           # Change this to be your CI task/script
           runCmd: |
             # Add multiple commands to run if needed

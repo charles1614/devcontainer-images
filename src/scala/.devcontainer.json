@@ -1,16 +1,23 @@
 {
-  "image": "ghcr.io/charles1614/devcontainers-images/debian:latest",
-  "features": {
-    "ghcr.io/devcontainers/features/java:1": {
-      "version": "11",
-      "installMaven": "true",
-      "mavenVersion": "3.8.8",
-      "installGradle": "false"
-    },
-    "ghcr.io/devcontainers-contrib/features/scala-sdkman:2": {
-      "version": "2.12.10",
+  // "image": "ghcr.io/charles1614/devcontainers-images/debian:latest",
+  "build":{
+    "dockerfile": "Dockerfile",
+    "args": {
       "jdkVersion": "11",
-      "jdkDistro": "open"
+
     }
+  },
+  "features": {
+    // "ghcr.io/devcontainers/features/java:1": {
+    //   "version": "11",
+    //   "installMaven": "true",
+    //   "mavenVersion": "3.8.8",
+    //   "installGradle": "false"
+    // }
+    // "ghcr.io/devcontainers-contrib/features/scala-sdkman:2": {
+    //   "version": "2.12.10",
+    //   "jdkVersion": "11",
+    //   "jdkDistro": "open"
+    // }
   }
 }

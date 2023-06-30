@@ -15,6 +15,7 @@ on: # rebuild any PRs and main branch changes
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Define subFolder include devcontainers
     strategy:
       matrix:
         subFolder: [debian, scala]

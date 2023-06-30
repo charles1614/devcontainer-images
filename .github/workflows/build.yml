@@ -1,5 +1,12 @@
 name: 'build' 
 on: # rebuild any PRs and main branch changes
+  workflow_dispatch:
+    inputs:
+      push:
+        type: boolean
+        description: push the devcontainer images?
+        required: true
+        default: false
   pull_request:
   push:
     branches:

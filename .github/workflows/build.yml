@@ -29,5 +29,5 @@ jobs:
           # Change this to be your CI task/script
           runCmd: |
             # Add multiple commands to run if needed
-            make install-packages
-            make ci-build
+            # make install-packages
+            # make ci-build

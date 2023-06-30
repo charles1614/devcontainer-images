@@ -1,5 +1,5 @@
 {
-  "image": "ghcr.io/charles1614/devcontainers-images/debain:latest",
+  "image": "ghcr.io/charles1614/devcontainers-images/debian:latest",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
       "version": "11",

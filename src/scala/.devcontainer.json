@@ -2,10 +2,10 @@
   // "image": "ghcr.io/charles1614/devcontainers-images/debian:latest",
   "build":{
     "dockerfile": "Dockerfile",
-    "args": {
-      "jdkVersion": "11",
-
-    }
+    // "args": {
+    //   "jdkVersion": "17",
+    //   "jdkDistro": "ms"
+    // }
   },
   "features": {
     // "ghcr.io/devcontainers/features/java:1": {

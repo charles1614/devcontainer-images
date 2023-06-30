@@ -32,7 +32,7 @@ jobs:
         with:
           subFolder: src/debian
           # Change this to point to your image name
-          imageName: ghcr.io/charles1614/devcontainers-images
+          imageName: ghcr.io/charles1614/devcontainers-images/debain
           # Change this to be your CI task/script
           runCmd: |
             # Add multiple commands to run if needed

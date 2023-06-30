@@ -1,4 +1,4 @@
-FROM ghcr.io/charles1614/devcontainers-images/debian:latest
+FROM ghcr.io/charles1614/devcontainer-images/debian:latest
 
 # RUN curl -s "https://get.sdkman.io" | bash 
 ARG JDK_VERSION=11.0.12-open

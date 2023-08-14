@@ -23,19 +23,26 @@ jobs:
       - name: Checkout (GitHub)
         uses: actions/checkout@v3
 
-      - name: Login to GitHub Container Registry
+      # - name: Login to GitHub Container Registry
+      #   uses: docker/login-action@v2
+      #   with:
+      #     registry: ghcr.io
+      #     username: ${{ github.repository_owner }}
+      #     password: ${{ secrets.GITHUB_TOKEN }}
+      -
+        name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: charles1416
+          password: dckr_pat_Z7XbRQoX0AJUUSAq5JSl_n70dVs
 
       - name: Build and run Dev Container task
         uses: devcontainers/ci@v0.3
         with:
           subFolder: src/${{ matrix.subFolder }}
           # Change this to point to your image name
-          imageName: ghcr.io/charles1614/devcontainer-images/${{ matrix.subFolder }}
+          # imageName: ghcr.io/charles1614/devcontainer-images/${{ matrix.subFolder }}
+          imageName: charles1416/devcontainer-images:${{ matrix.subFolder }}
           # Change this to be your CI task/script
           runCmd: |
             # Add multiple commands to run if needed

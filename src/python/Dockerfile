@@ -1,1 +1,1 @@
-FROM ghcr.io/charles1614/devcontainer-images/debian:latest
+FROM charles1416/devcontainer-images-debian:latest

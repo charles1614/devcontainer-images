@@ -9,7 +9,7 @@ RUN bash -c "echo '===== Replacing Source =====' \
     && apt -y install npm \
     && npm config set registry http://registry.npm.taobao.org \
     && npm install -g cnpm --registry=http://registry.npm.taobao.org \
-    && npm install vue \
-    && npm install @vue/cli \
-    && npm install n \
+    && npm install -g vue \
+    && npm install -g @vue/cli \
+    && npm install -g n \
     && n stable" 

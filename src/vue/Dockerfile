@@ -5,8 +5,8 @@ RUN bash -c "echo '===== Replacing Source =====' \
         -e 's?security.debian.org?mirrors.tuna.tsinghua.edu.cn?g' \
         /etc/apt/sources.list \
     && apt -y update \
-    && apt install nodejs \
-    && apt install npm \
+    && apt -y install nodejs \
+    && apt -y install npm \
     && npm config set registry http://registry.npm.taobao.org \
     && npm install -g cnpm --registry=http://registry.npm.taobao.org \
     && cnpm install vue \

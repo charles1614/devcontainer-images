@@ -11,5 +11,7 @@ RUN bash -c "echo '===== Replacing Source =====' \
     && npm install -g cnpm --registry=http://registry.npm.taobao.org \
     && npm install -g vue \
     && npm install -g @vue/cli \
+    && npm install -g @vitejs/plugin-vue \
+    && npm install -g vite \
     && npm install -g n \
     && n stable" 

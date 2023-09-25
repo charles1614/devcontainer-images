@@ -14,8 +14,13 @@ RUN bash -c "echo '===== Replacing Source =====' \
     && npm install -g n \
     && n stable" 
 
-RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.5/zsh-in-docker.sh)"
-
+RUN sh -c "echo '===== Use Zsh =====' \
+    && wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.5/zsh-in-docker.sh \
+    && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting \
+    && git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions \
+    && sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/g' ~/.zshrc"
+    
+ENV PIP_ROOT_USER_ACTION=ignore
 RUN bash -c "echo '==== Install Miniconda ====' \
     && mkdir -p ~/miniconda3 \
     && wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh \

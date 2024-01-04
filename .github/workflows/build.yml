@@ -18,7 +18,7 @@ jobs:
     # Define subFolder include devcontainers
     strategy:
       matrix:
-        subFolder: [debian, scala, python, vue]
+        subFolder: [debian, scala, python, vue, cpp]
     steps:
       - name: Checkout (GitHub)
         uses: actions/checkout@v3

@@ -12,8 +12,10 @@
       "configureZshAsDefaultShell": "true"
     },
     "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers-contrib/features/ninja-asdf:2":{},
-    "ghcr.io/adamlm/devcontainer-features/cmake:0.2.0": {},
-                            "ghcr.io/rapidsai/devcontainers/features/gcc:24":{}
+    "ghcr.io/rapidsai/devcontainers/features/gcc:24":{},
+    "ghcr.io/rapidsai/devcontainers/features/cmake:24.2.0": {},
+    "ghcr.io/rapidsai/devcontainers/features/ninja:24.2.0": {},
+    "ghcr.io/rapidsai/devcontainers/features/llvm:24.2.0": {}
+
   }
 }

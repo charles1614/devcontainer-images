@@ -1,5 +1,5 @@
-ARG VARIANT=22.04
-ARG BASE_IMAGE=ubuntu
+ARG VARIANT=noetic-ros-base-focal
+ARG BASE_IMAGE=ros
 FROM ${BASE_IMAGE}:${VARIANT}
 
 RUN apt-get update \

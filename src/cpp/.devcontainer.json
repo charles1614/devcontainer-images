@@ -3,8 +3,8 @@
     "dockerfile": "Dockerfile",
     "context": ".",
     "args": {
-      "VARIANT": "22.04",
-      "BASE_IMAGE": "ubuntu"
+      "VARIANT": "noetic-ros-base-focal",
+      "BASE_IMAGE": "ros"
     }
   },
   "features": {

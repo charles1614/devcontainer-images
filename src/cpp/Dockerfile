@@ -1,5 +1,5 @@
-ARG VARIANT=11-slim
-ARG BASE_IMAGE=debain
+ARG VARIANT=22.04
+ARG BASE_IMAGE=ubuntu
 FROM ${BASE_IMAGE}:${VARIANT}
 
 RUN apt-get update \

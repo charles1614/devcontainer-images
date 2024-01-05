@@ -3,8 +3,8 @@
     "dockerfile": "Dockerfile",
     "context": ".",
     "args": {
-      "VARIANT": "11-slim",
-      "BASE_IMAGE": "debian"
+      "VARIANT": "22.04",
+      "BASE_IMAGE": "ubuntu"
     }
   },
   "features": {

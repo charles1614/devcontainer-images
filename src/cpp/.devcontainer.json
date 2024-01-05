@@ -14,6 +14,6 @@
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers-contrib/features/ninja-asdf:2":{},
     "ghcr.io/adamlm/devcontainer-features/cmake:0.2.0": {},
-    "ghcr.io/devcontainers-community/features/gcc": { "version": "11.3.0" }
+                            "ghcr.io/rapidsai/devcontainers/features/gcc:24":{}
   }
 }

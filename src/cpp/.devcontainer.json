@@ -13,7 +13,7 @@
     },
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/rapidsai/devcontainers/features/gcc:24":{},
-    "ghcr.io/rapidsai/devcontainers/features/cmake:24.2.0": {},
+    "ghcr.io/azais-corentin/devcontainers-features/cmake:1.0.4": {},
     "ghcr.io/rapidsai/devcontainers/features/ninja:24.2.0": {},
     "ghcr.io/rapidsai/devcontainers/features/llvm:24.2.0": {}
 
